@@ -1,29 +1,21 @@
 package fr.cils.projet.stage.entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class OffreStage
 {
-
     public int id;
-
     public String libelle;
-
     public String description;
-
     public String domaine;
-
-    public Date dateDebut;
-
+    public LocalDate dateDebut;
     public int duree;
-
     public boolean estValide;
-
     public Entreprise entrepriseAssociee;
 
 
     public OffreStage(String libelle, String description, String domaine,
-                      Date dateDebut, int duree, boolean estValide)
+                      LocalDate dateDebut, int duree, boolean estValide)
     {
         this.libelle = libelle;
         this.description = description;
@@ -34,7 +26,7 @@ public class OffreStage
     }
 
     public OffreStage(int id, String libelle, String description, String domaine,
-                      Date dateDebut, int duree, boolean estValide)
+                      LocalDate dateDebut, int duree, boolean estValide)
     {
         this.id = id;
         this.libelle = libelle;
@@ -46,7 +38,7 @@ public class OffreStage
     }
 
     public OffreStage(int id, String libelle, String description, String domaine,
-                      Date dateDebut, int duree, boolean estValide,
+                      LocalDate dateDebut, int duree, boolean estValide,
                       Entreprise entrepriseAssociee)
     {
         this.id = id;
